@@ -1,0 +1,101 @@
+body{
+	font-family: Helvetica, Arial, sans-serif;
+	color: #666;
+	background: #f2f2f2; 
+	font-size: 1em;
+    line-height: 1.5em;
+    margin: 8px;
+	margin-left: 5px;
+  	margin-right: 5px; 
+	text-align: justify;
+}
+h1{
+	font-size: 2em;
+	line-height: 1.3em;
+	margin: 13px 0;
+	text-align: center;
+	font-weight: 100%;
+}
+img#logo{
+	padding-left: 50px;
+	padding-top: 10px;
+    width: auto;
+}
+#main-header{
+	background: #333;
+	color: white;
+	height: 100px;
+	width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+	left: 0; /* Posicionamos la cabecera al lado izquierdo */
+	top: 0; /* Posicionamos la cabecera pegada arriba */
+	position: absolute; /* Hacemos que la cabecera tenga una posición fija */
+}
+#main-header a{
+color: white;
+}
+
+.container{
+	padding-top: 100px;
+}
+
+nav {
+	float: right;
+}
+	nav ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		padding-right: 20px;
+	}
+	
+		nav ul li {
+			display: inline-block;
+			line-height: 100px;
+		}
+			
+			nav ul li a {
+				display: block;
+				padding: 0 10px;
+				text-decoration: none;
+			}
+			
+				nav ul li a:hover {
+					background: rgb(146, 142, 142);
+				}
+
+.slider {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
